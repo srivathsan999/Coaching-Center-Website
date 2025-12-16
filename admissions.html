@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Excellence Academy</title>
+    <meta name="description" content="Admission process and information for Excellence Academy">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'academic-blue': '#1E3A8A',
+                        'warm-gold': '#F59E0B',
+                        'accent-gold': '#FBBF24',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark border-b border-white/20 dark:border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
+                            <span class="text-white font-heading font-bold text-xl">E</span>
+                        </div>
+                        <span class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB]">Excellence Academy</span>
+                    </a>
+                </div>
+                
+                <!-- Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a>
+                    <a href="courses.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a>
+                    <a href="about.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About</a>
+                    <a href="faculty.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Faculty</a>
+                    <a href="results.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Results</a>
+                    <a href="admissions.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Admissions</a>
+                    <a href="contact.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-toggle" class="lg:hidden p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle menu">
+                    <svg class="w-6 h-6 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                
+                <!-- Theme Toggle & Auth -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
+                        <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        </svg>
+                    </button>
+                    <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="px-4 py-2 text-academic-blue dark:text-[#3B82F6] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home</a>
+                    <a href="courses.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Courses</a>
+                    <a href="about.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">About</a>
+                    <a href="faculty.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Faculty</a>
+                    <a href="results.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
+                    <a href="admissions.html" class="px-4 py-2 text-academic-blue dark:text-[#3B82F6] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
+                    <a href="contact.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
+                    <div class="flex items-center justify-between px-4 py-2">
+                        <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
+                        <button id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
+                            <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-24 pb-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">
+                Admissions Open
+            </h1>
+            <p class="text-lg text-[#475569] dark:text-[#94a3b8] max-w-2xl mx-auto">
+                Start your journey towards academic excellence. Join Excellence Academy and unlock your potential with our expert guidance and comprehensive programs.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Buttons -->
+    <section class="py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="signup.html" class="px-8 py-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition transform hover:scale-105 text-center">
+                    Apply Now
+                </a>
+                <a href="contact.html" class="px-8 py-3 border-2 border-academic-blue dark:border-[#3B82F6] text-academic-blue dark:text-[#3B82F6] rounded-lg font-medium hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition text-center">
+                    Book Free Counseling
+                </a>
+                <a href="tel:+15551234567" class="px-8 py-3 border-2 border-warm-gold dark:border-accent-gold text-warm-gold dark:text-accent-gold rounded-lg font-medium hover:bg-warm-gold/10 dark:hover:bg-accent-gold/10 transition text-center">
+                    Call / WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Open for Admission -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-[#0F172A] dark:text-[#E5E7EB]">
+                Courses Open for Admission
+            </h2>
+            <p class="text-center text-[#475569] dark:text-[#94a3b8] mb-12 max-w-2xl mx-auto">
+                Choose from our comprehensive range of courses designed to help you achieve your academic and career goals.
+            </p>
+            <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-academic-blue dark:bg-[#3B82F6] text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-heading font-semibold">Course</th>
+                                <th class="px-6 py-4 text-left font-heading font-semibold">Duration</th>
+                                <th class="px-6 py-4 text-left font-heading font-semibold">Mode</th>
+                                <th class="px-6 py-4 text-left font-heading font-semibold">Status</th>
+                                <th class="px-6 py-4 text-center font-heading font-semibold">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
+                            <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                                <td class="px-6 py-4 font-medium text-[#0F172A] dark:text-[#E5E7EB]">IIT-JEE</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">2 Years</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">Online & Offline</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full text-xs font-medium">Open</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <a href="signup.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Apply</a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                                <td class="px-6 py-4 font-medium text-[#0F172A] dark:text-[#E5E7EB]">NEET</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">2 Years</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">Online & Offline</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full text-xs font-medium">Open</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <a href="signup.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Apply</a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                                <td class="px-6 py-4 font-medium text-[#0F172A] dark:text-[#E5E7EB]">Foundation Course</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">1 Year</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">Online & Offline</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full text-xs font-medium">Open</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <a href="signup.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Apply</a>
+                                </td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                                <td class="px-6 py-4 font-medium text-[#0F172A] dark:text-[#E5E7EB]">Board Exam Preparation</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">1 Year</td>
+                                <td class="px-6 py-4 text-[#475569] dark:text-[#94a3b8]">Online & Offline</td>
+                                <td class="px-6 py-4">
+                                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full text-xs font-medium">Open</span>
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <a href="signup.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Apply</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Process -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
+                Admission Process
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-heading font-bold text-2xl">1</span>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Application</h3>
+                    <p class="text-[#475569] dark:text-[#94a3b8] text-sm">
+                        Fill out the online application form or visit our campus to apply in person.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-heading font-bold text-2xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Counseling</h3>
+                    <p class="text-[#475569] dark:text-[#94a3b8] text-sm">
+                        Attend a free counseling session to understand the course structure and requirements.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-heading font-bold text-2xl">3</span>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Documentation</h3>
+                    <p class="text-[#475569] dark:text-[#94a3b8] text-sm">
+                        Submit required documents and complete the enrollment formalities.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white font-heading font-bold text-2xl">4</span>
+                    </div>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Confirmation</h3>
+                    <p class="text-[#475569] dark:text-[#94a3b8] text-sm">
+                        Receive admission confirmation and begin your learning journey with us.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility Criteria -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
+                Eligibility Criteria
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- IIT-JEE -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">IIT-JEE</h3>
+                    <ul class="space-y-2 text-[#475569] dark:text-[#94a3b8]">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Class 11 or 12 students</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Minimum 75% in Class 10</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Strong foundation in Physics, Chemistry, Mathematics</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- NEET -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">NEET</h3>
+                    <ul class="space-y-2 text-[#475569] dark:text-[#94a3b8]">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Class 11 or 12 students</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Minimum 75% in Class 10</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Strong foundation in Physics, Chemistry, Biology</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Foundation -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Foundation Course</h3>
+                    <ul class="space-y-2 text-[#475569] dark:text-[#94a3b8]">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Class 9 or 10 students</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>No minimum percentage required</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Open to all students willing to learn</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Board Exams -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
+                    <h3 class="text-xl font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Board Exam Preparation</h3>
+                    <ul class="space-y-2 text-[#475569] dark:text-[#94a3b8]">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Class 10, 11, or 12 students</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>All boards accepted</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Flexible timing options available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fee Structure -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
+                Fee Structure
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <h3 class="text-lg font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">IIT-JEE</h3>
+                    <div class="text-2xl font-heading font-bold text-academic-blue dark:text-[#3B82F6] mb-2">₹45,000</div>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Per Year</p>
+                </div>
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <h3 class="text-lg font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">NEET</h3>
+                    <div class="text-2xl font-heading font-bold text-academic-blue dark:text-[#3B82F6] mb-2">₹45,000</div>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Per Year</p>
+                </div>
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <h3 class="text-lg font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Foundation</h3>
+                    <div class="text-2xl font-heading font-bold text-academic-blue dark:text-[#3B82F6] mb-2">₹25,000</div>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Per Year</p>
+                </div>
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
+                    <h3 class="text-lg font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Board Prep</h3>
+                    <div class="text-2xl font-heading font-bold text-academic-blue dark:text-[#3B82F6] mb-2">₹20,000</div>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Per Year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarships & Entrance Exam -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Scholarships -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Scholarships Available</h2>
+                    <p class="text-[#475569] dark:text-[#94a3b8] mb-4">
+                        We offer merit-based scholarships to deserving students. Scholarships are awarded based on:
+                    </p>
+                    <ul class="space-y-2 text-[#475569] dark:text-[#94a3b8]">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-warm-gold dark:text-accent-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Previous academic performance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-warm-gold dark:text-accent-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Entrance test scores</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-warm-gold dark:text-accent-gold mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Financial need (for need-based scholarships)</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block mt-6 text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Learn More →</a>
+                </div>
+                
+                <!-- Entrance Exam -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Entrance Examination</h2>
+                    <p class="text-[#475569] dark:text-[#94a3b8] mb-4">
+                        Admission to certain courses requires clearing our entrance examination. The exam tests:
+                    </p>
+                    <ul class="space-y-2 text-[#475569] dark:text-[#94a3b8]">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Subject knowledge and aptitude</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Logical reasoning and problem-solving</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-academic-blue dark:text-[#3B82F6] mr-2 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Time management skills</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="inline-block mt-6 text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Schedule Exam →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
+                Frequently Asked Questions
+            </h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ 1 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                        <span class="font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">What documents are required for admission?</span>
+                        <svg class="w-5 h-5 text-[#475569] dark:text-[#94a3b8] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-[#475569] dark:text-[#94a3b8]">
+                            Required documents include: Class 10 mark sheet, Class 11/12 mark sheet (if applicable), Aadhaar card, passport size photographs, and any relevant certificates. Original documents will be verified during admission.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                        <span class="font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Is there an entrance exam for all courses?</span>
+                        <svg class="w-5 h-5 text-[#475569] dark:text-[#94a3b8] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-[#475569] dark:text-[#94a3b8]">
+                            Entrance exams are required for IIT-JEE and NEET programs. Foundation and Board Exam Preparation courses have direct admission based on eligibility criteria. Contact our admission office for specific requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                        <span class="font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">What are the payment options available?</span>
+                        <svg class="w-5 h-5 text-[#475569] dark:text-[#94a3b8] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-[#475569] dark:text-[#94a3b8]">
+                            We accept payment through cash, bank transfer, credit/debit cards, and online payment gateways. Installment plans are available for eligible students. Please contact our finance department for more details.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                        <span class="font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Can I switch between online and offline modes?</span>
+                        <svg class="w-5 h-5 text-[#475569] dark:text-[#94a3b8] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-[#475569] dark:text-[#94a3b8]">
+                            Yes, students can switch between online and offline modes based on availability and course structure. Please inform the administration at least one week in advance for mode change requests.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ 5 -->
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg overflow-hidden">
+                    <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 dark:hover:bg-white/5 transition">
+                        <span class="font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">What is the refund policy?</span>
+                        <svg class="w-5 h-5 text-[#475569] dark:text-[#94a3b8] transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4">
+                        <p class="text-[#475569] dark:text-[#94a3b8]">
+                            Refund requests must be submitted within 15 days of admission. Refunds are processed as per our policy: 80% refund if requested within 7 days, 50% within 15 days. No refunds after 15 days. Terms and conditions apply.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-gradient-to-r from-academic-blue to-[#3B82F6] dark:from-[#3B82F6] dark:to-[#60a5fa] rounded-2xl p-8 md:p-12 text-center text-white">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">
+                    Ready to Start Your Journey?
+                </h2>
+                <p class="text-lg mb-8 text-white/90 max-w-2xl mx-auto">
+                    Join thousands of successful students and take the first step towards achieving your goals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="signup.html" class="px-8 py-3 bg-white text-academic-blue rounded-lg font-medium hover:opacity-90 transition transform hover:scale-105">
+                        Apply Now
+                    </a>
+                    <a href="contact.html" class="px-8 py-3 border-2 border-white text-white rounded-lg font-medium hover:bg-white/10 transition">
+                        Book Free Counseling
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-[#1e293b] border-t border-gray-200 dark:border-gray-700 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
+                            <span class="text-white font-heading font-bold">E</span>
+                        </div>
+                        <span class="font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Excellence Academy</span>
+                    </div>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">
+                        Empowering students through quality education and expert coaching since 2009.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a></li>
+                        <li><a href="courses.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a></li>
+                        <li><a href="about.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About Us</a></li>
+                        <li><a href="contact.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Contact</h3>
+                    <ul class="space-y-2 text-sm text-[#475569] dark:text-[#94a3b8]">
+                        <li>123 Education Street</li>
+                        <li>City, State 12345</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: info@excellenceacademy.com</li>
+                    </ul>
+                </div>
+                
+                <!-- Social -->
+                <div>
+                    <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-sm text-[#475569] dark:text-[#94a3b8]">
+                <p>&copy; 2025 Excellence Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script src="assets/js/theme.js"></script>
+    
+    <!-- FAQ Accordion Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('svg');
+                    
+                    // Toggle content visibility
+                    content.classList.toggle('hidden');
+                    
+                    // Rotate icon
+                    if (content.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        });
+    </script>
+    
+    <!-- Mobile Menu Toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+            
+            if (mobileMenuToggle && mobileMenu) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            if (themeToggleMobile) {
+                themeToggleMobile.addEventListener('click', function() {
+                    if (window.toggleTheme) {
+                        window.toggleTheme();
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+

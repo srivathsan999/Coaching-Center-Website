@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Excellence Academy</title>
+    <meta name="description" content="Page not found">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'academic-blue': '#1E3A8A',
+                        'warm-gold': '#F59E0B',
+                        'accent-gold': '#FBBF24',
+                    },
+                    fontFamily: {
+                        'heading': ['Poppins', 'sans-serif'],
+                        'body': ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300 min-h-screen flex items-center justify-center px-4">
+    
+    <!-- Theme Toggle (Top Right) -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="theme-toggle" class="p-2 rounded-lg glass dark:glass-dark hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
+            <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- 404 Content -->
+    <div class="text-center max-w-md">
+        <div class="mb-8">
+            <h1 class="text-9xl font-heading font-bold text-academic-blue dark:text-[#3B82F6] mb-4">404</h1>
+            <h2 class="text-3xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">
+                Page Not Found
+            </h2>
+            <p class="text-lg text-[#475569] dark:text-[#94a3b8] mb-8">
+                Sorry, the page you are looking for doesn't exist or has been moved.
+            </p>
+        </div>
+        
+        <div class="space-y-4">
+            <a href="index.html" class="inline-block px-8 py-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition transform hover:scale-105">
+                Back to Home
+            </a>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="courses.html" class="text-academic-blue dark:text-[#3B82F6] hover:opacity-80 transition">Courses</a>
+                <a href="about.html" class="text-academic-blue dark:text-[#3B82F6] hover:opacity-80 transition">About</a>
+                <a href="contact.html" class="text-academic-blue dark:text-[#3B82F6] hover:opacity-80 transition">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle Script -->
+    <script src="assets/js/theme.js"></script>
+</body>
+</html>
+

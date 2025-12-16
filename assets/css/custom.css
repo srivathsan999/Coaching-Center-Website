@@ -1,0 +1,104 @@
+/* Custom CSS for Glassmorphism and Neumorphism Effects */
+
+/* Glassmorphism Helper Classes */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Neumorphism Helper Classes */
+.neumorphic {
+    background: #F8FAFC;
+    box-shadow: 8px 8px 16px #d1d5db, -8px -8px 16px #ffffff;
+}
+
+.neumorphic-dark {
+    background: #1e293b;
+    box-shadow: 8px 8px 16px #0f172a, -8px -8px 16px #334155;
+}
+
+.neumorphic-button {
+    background: #F8FAFC;
+    box-shadow: 4px 4px 8px #d1d5db, -4px -4px 8px #ffffff;
+    transition: all 0.2s ease;
+}
+
+.neumorphic-button:hover {
+    box-shadow: 2px 2px 4px #d1d5db, -2px -2px 4px #ffffff;
+}
+
+.neumorphic-button-dark {
+    background: #1e293b;
+    box-shadow: 4px 4px 8px #0f172a, -4px -4px 8px #334155;
+    transition: all 0.2s ease;
+}
+
+.neumorphic-button-dark:hover {
+    box-shadow: 2px 2px 4px #0f172a, -2px -2px 4px #334155;
+}
+
+/* Smooth Transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Fade and Slide Animation */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-slide {
+    animation: fadeSlideUp 0.6s ease-out;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dark ::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #475569;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
