@@ -49,7 +49,7 @@
         }
     </style>
 </head>
-<body class="bg-[#F8FAFC] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
+<body class="bg-[#FAF8F5] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
     
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark border-b border-white/20 dark:border-white/10">
@@ -66,7 +66,7 @@
                 </div>
                 
                 <!-- Menu -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-8 ml-8">
                     <a href="index.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a>
                     <a href="courses.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a>
                     <a href="about.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">About</a>
@@ -84,12 +84,13 @@
                 </button>
                 
                 <!-- Theme Toggle & Auth -->
-                <div class="hidden lg:flex items-center space-x-4">
+                <div class="hidden lg:flex items-center space-x-4 ml-8">
                     <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
                         <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
+                    <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
                     <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                 </div>
             </div>
@@ -104,7 +105,8 @@
                     <a href="results.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
                     <a href="admissions.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
                     <a href="contact.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
-                    <div class="flex items-center justify-between px-4 py-2">
+                    <div class="flex items-center justify-between px-4 py-2 space-x-2">
+                        <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
                         <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                         <button id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
                             <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -135,12 +137,12 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Mission -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-8 shadow-lg">
-                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-6 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Our Mission</h2>
+                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB] text-center">Our Mission</h2>
                     <p class="text-[#475569] dark:text-[#94a3b8] leading-relaxed">
                         To provide accessible, high-quality education that empowers individuals to reach their full potential. We are committed to fostering a learning environment that combines academic excellence with practical skills, preparing our students for success in their chosen careers.
                     </p>
@@ -148,13 +150,13 @@
                 
                 <!-- Vision -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-8 shadow-lg">
-                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-6 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                         </svg>
                     </div>
-                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Our Vision</h2>
+                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB] text-center">Our Vision</h2>
                     <p class="text-[#475569] dark:text-[#94a3b8] leading-relaxed">
                         To become a leading educational institution recognized for innovation, excellence, and student success. We envision a future where every student has access to world-class education and the tools needed to excel in an ever-evolving global landscape.
                     </p>
@@ -164,7 +166,7 @@
     </section>
 
     <!-- Teaching Methodology Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F3F0] dark:bg-[#1e293b]/50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
                 Our Teaching Methodology
@@ -172,10 +174,10 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Method 1 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <span class="text-white font-heading font-bold text-xl">1</span>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Interactive Learning</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Interactive Learning</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
                         We believe in active participation. Our classes are designed to encourage discussion, collaboration, and hands-on practice.
                     </p>
@@ -183,10 +185,10 @@
                 
                 <!-- Method 2 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <span class="text-white font-heading font-bold text-xl">2</span>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Practical Application</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Practical Application</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
                         Theory meets practice. Every concept is reinforced with real-world projects and case studies relevant to industry needs.
                     </p>
@@ -194,10 +196,10 @@
                 
                 <!-- Method 3 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <span class="text-white font-heading font-bold text-xl">3</span>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Personalized Support</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Personalized Support</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
                         Every student is unique. We provide individualized attention and support to help each learner achieve their goals.
                     </p>
@@ -256,7 +258,7 @@
     </section>
 
     <!-- Values Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F3F0] dark:bg-[#1e293b]/50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
                 Our Core Values

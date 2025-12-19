@@ -68,7 +68,7 @@
         }
     </style>
 </head>
-<body class="bg-[#F8FAFC] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
+<body class="bg-[#FAF8F5] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
     
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark border-b border-white/20 dark:border-white/10">
@@ -85,7 +85,7 @@
                 </div>
                 
                 <!-- Menu -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-8 ml-8">
                     <a href="index.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a>
                     <a href="courses.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Courses</a>
                     <a href="about.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About</a>
@@ -103,12 +103,13 @@
                 </button>
                 
                 <!-- Theme Toggle & Auth -->
-                <div class="hidden lg:flex items-center space-x-4">
+                <div class="hidden lg:flex items-center space-x-4 ml-8">
                     <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
                         <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
+                    <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
                     <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                 </div>
             </div>
@@ -123,7 +124,8 @@
                     <a href="results.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
                     <a href="admissions.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
                     <a href="contact.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
-                    <div class="flex items-center justify-between px-4 py-2">
+                    <div class="flex items-center justify-between px-4 py-2 space-x-2">
+                        <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
                         <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                         <button id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
                             <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -151,22 +153,22 @@
     <!-- Courses Grid -->
     <section class="py-8 px-4 sm:px-6 lg:px-8 pb-16">
         <div class="max-w-6xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
                 
                 <!-- Course 1 -->
-                <div class="course-card bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="course-card bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Business Management" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Business Management</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Business</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Business Management</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master essential business skills, leadership principles, and strategic management techniques.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -177,26 +179,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Business Management">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Business Management">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 2 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Data Science" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Data Science</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">8 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Data Science & Analytics</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn data analysis, machine learning, statistical modeling, and data visualization techniques.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -207,26 +209,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Data Science & Analytics">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Data Science & Analytics">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 3 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80" alt="English Proficiency" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">English Proficiency</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Language</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">4 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">English Proficiency</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Enhance your communication skills, grammar, vocabulary, and fluency for global opportunities.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -237,26 +239,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="English Proficiency">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="English Proficiency">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 4 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Web Development" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Web Development</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Full-Stack Web Development</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master front-end and back-end technologies to build modern, responsive web applications.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -267,26 +269,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Full-Stack Web Development">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Full-Stack Web Development">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 5 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Digital Marketing" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Digital Marketing</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Marketing</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">5 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Digital Marketing</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn SEO, social media marketing, content strategy, and analytics to grow businesses online.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -297,26 +299,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Digital Marketing">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Digital Marketing">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 6 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" alt="Finance & Accounting" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Finance & Accounting</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Finance</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">7 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Finance & Accounting</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master financial analysis, accounting principles, and financial management strategies.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -327,26 +329,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Finance & Accounting">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Finance & Accounting">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 7 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Graphic Design" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Graphic Design</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Design</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">5 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Graphic Design</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn Adobe Creative Suite, typography, branding, and visual communication principles.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -357,26 +359,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Graphic Design">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Graphic Design">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 8 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Project Management" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Project Management</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Management</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Project Management</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master Agile, Scrum, and PMP methodologies to lead successful projects from start to finish.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -387,26 +389,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Project Management">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Project Management">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 9 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80" alt="Cybersecurity" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Cybersecurity</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">9 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Cybersecurity</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn ethical hacking, network security, threat analysis, and security best practices.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -417,26 +419,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Cybersecurity">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Cybersecurity">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 10 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Mobile App Development" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Mobile App Development</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">7 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Mobile App Development</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Build native and cross-platform mobile applications for iOS and Android platforms.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -447,26 +449,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Mobile App Development">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Mobile App Development">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 11 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80" alt="Content Writing" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Content Writing</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Writing</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">4 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Content Writing</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master SEO writing, copywriting, blog creation, and content strategy for digital platforms.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -477,26 +479,26 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="Content Writing">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Content Writing">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 12 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" alt="UI/UX Design" class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">UI/UX Design</span>
                     </div>
-                    <div class="p-6">
+                    <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
                             <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Design</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
                         <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">UI/UX Design</h3>
-                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm">
+                        <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn user interface design, user experience principles, prototyping, and design thinking.
                         </p>
                         <div class="flex items-center justify-between mb-4">
@@ -507,7 +509,7 @@
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition" data-course="UI/UX Design">
+                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="UI/UX Design">
                             Enroll Now
                         </button>
                     </div>
@@ -602,17 +604,17 @@
                 <div>
                     <label for="enroll-name" class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Full Name</label>
                     <input type="text" id="enroll-name" name="name" required
-                        class="w-full px-4 py-3 rounded-lg bg-[#F8FAFC] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
+                        class="w-full px-4 py-3 rounded-lg bg-[#FFFEFB] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
                 </div>
                 <div>
                     <label for="enroll-email" class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Email Address</label>
                     <input type="email" id="enroll-email" name="email" required
-                        class="w-full px-4 py-3 rounded-lg bg-[#F8FAFC] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
+                        class="w-full px-4 py-3 rounded-lg bg-[#FFFEFB] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
                 </div>
                 <div>
                     <label for="enroll-phone" class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Phone Number</label>
                     <input type="tel" id="enroll-phone" name="phone" required
-                        class="w-full px-4 py-3 rounded-lg bg-[#F8FAFC] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
+                        class="w-full px-4 py-3 rounded-lg bg-[#FFFEFB] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
                 </div>
                 <div class="flex gap-4 pt-4">
                     <button type="button" id="cancel-enroll" class="flex-1 px-4 py-3 border-2 border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-white/5 transition">

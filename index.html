@@ -68,7 +68,7 @@
         }
     </style>
 </head>
-<body class="bg-[#F8FAFC] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
+<body class="bg-[#FAF8F5] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
     
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark border-b border-white/20 dark:border-white/10">
@@ -85,7 +85,7 @@
                 </div>
                 
                 <!-- Menu -->
-                <div class="hidden lg:flex items-center space-x-8">
+                <div class="hidden lg:flex items-center space-x-8 ml-8">
                     <a href="index.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Home</a>
                     <a href="courses.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a>
                     <a href="about.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About</a>
@@ -103,12 +103,13 @@
                 </button>
                 
                 <!-- Theme Toggle & Auth -->
-                <div class="hidden lg:flex items-center space-x-4">
+                <div class="hidden lg:flex items-center space-x-4 ml-8">
                     <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
                         <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
+                    <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
                     <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                 </div>
             </div>
@@ -123,7 +124,8 @@
                     <a href="results.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
                     <a href="admissions.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
                     <a href="contact.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
-                    <div class="flex items-center justify-between px-4 py-2">
+                    <div class="flex items-center justify-between px-4 py-2 space-x-2">
+                        <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
                         <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                         <button id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
                             <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -169,12 +171,12 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-slide">
-                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Expert Instructors</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Expert Instructors</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
                         Learn from industry professionals with years of experience and proven track records in their respective fields.
                     </p>
@@ -182,12 +184,12 @@
                 
                 <!-- Card 2 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-slide">
-                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Proven Results</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Proven Results</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
                         Our students consistently achieve top scores and career breakthroughs with our structured learning approach.
                     </p>
@@ -195,12 +197,12 @@
                 
                 <!-- Card 3 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-slide">
-                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4">
+                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Flexible Learning</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Flexible Learning</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
                         Choose from online, offline, or hybrid modes to fit your schedule and learning preferences.
                     </p>
@@ -210,7 +212,7 @@
     </section>
 
     <!-- Courses Overview Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F3F0] dark:bg-[#1e293b]/50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-4 text-[#0F172A] dark:text-[#E5E7EB]">
                 Popular Courses
@@ -300,7 +302,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white/50 dark:bg-[#1e293b]/50">
+    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F3F0] dark:bg-[#1e293b]/50">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
                 What Our Students Say
