@@ -47,40 +47,218 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Poppins', sans-serif;
         }
+        
+        /* Sidebar Navigation Styles */
+        #sidebar nav {
+            scrollbar-width: thin;
+            scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+        }
+        
+        #sidebar nav::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        #sidebar nav::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        #sidebar nav::-webkit-scrollbar-thumb {
+            background-color: rgba(156, 163, 175, 0.5);
+            border-radius: 3px;
+        }
+        
+        #sidebar nav::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(156, 163, 175, 0.7);
+        }
+        
+        .dark #sidebar nav::-webkit-scrollbar-thumb {
+            background-color: rgba(148, 163, 184, 0.5);
+        }
+        
+        .dark #sidebar nav::-webkit-scrollbar-thumb:hover {
+            background-color: rgba(148, 163, 184, 0.7);
+        }
+        
+        /* Active navigation item indicator */
+        #sidebar nav a[href="#"]:first-child {
+            position: relative;
+        }
+        
+        /* Smooth transitions for sidebar */
+        #sidebar {
+            will-change: transform;
+        }
     </style>
 </head>
 <body class="bg-[#FAF8F5] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
     
-    <!-- Simple Header -->
-    <header class="bg-white dark:bg-[#1e293b] border-b border-gray-200 dark:border-gray-700">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <!-- Logo & Brand -->
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="flex items-center space-x-1.5 sm:space-x-2">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
-                            <span class="text-white font-heading font-bold text-base sm:text-xl">E</span>
-                        </div>
-                        <span class="font-heading font-semibold text-sm sm:text-lg text-[#0F172A] dark:text-[#E5E7EB]">Excellence Academy</span>
-                    </a>
+    <!-- Mobile Overlay -->
+    <div id="sidebar-overlay" class="fixed inset-0 bg-black/50 z-30 lg:hidden hidden"></div>
+
+    <!-- Side Navigation -->
+    <div class="fixed inset-y-0 left-0 z-40 w-64 bg-white dark:bg-[#1e293b] border-r border-gray-200 dark:border-gray-700 transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out" id="sidebar">
+        <!-- Logo Section -->
+        <div class="flex items-center justify-between h-16 px-6 border-b border-gray-200 dark:border-gray-700">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
+                    <span class="text-white font-heading font-bold text-xl">E</span>
                 </div>
-                
-                <!-- Logout Button -->
-                <div class="flex items-center">
-                    <a href="index.html" class="px-2 py-1.5 sm:px-4 sm:py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-xs sm:text-sm font-medium hover:opacity-90 transition flex items-center space-x-1 sm:space-x-2">
-                        <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                <span class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB]">Excellence</span>
+            </a>
+            <button id="sidebar-close" class="lg:hidden text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex-1 px-4 py-6 overflow-y-auto">
+            <div class="space-y-1">
+                <!-- Dashboard (Active) -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg bg-academic-blue dark:bg-[#3B82F6] text-white">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Dashboard
+                </a>
+
+                <!-- Students -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                    Students
+                </a>
+
+                <!-- Courses -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    Courses
+                </a>
+
+                <!-- Faculty -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    Faculty
+                </a>
+
+                <!-- Payments -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    Payments
+                </a>
+
+                <!-- Admissions -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Admissions
+                </a>
+
+                <!-- Reports -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                    Reports
+                </a>
+
+                <!-- Analytics -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                    Analytics
+                </a>
+
+                <!-- Notifications -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                    Notifications
+                    <span class="ml-auto px-2 py-0.5 text-xs font-semibold bg-red-500 text-white rounded-full">3</span>
+                </a>
+
+                <!-- Settings -->
+                <a href="#" class="flex items-center px-4 py-3 text-sm font-medium rounded-lg text-[#475569] dark:text-[#94a3b8] hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    Settings
+                </a>
+            </div>
+
+            <!-- Divider -->
+            <div class="my-6 border-t border-gray-200 dark:border-gray-700"></div>
+
+            <!-- User Section -->
+            <div class="px-4">
+                <div class="flex items-center px-4 py-3 rounded-lg bg-gray-50 dark:bg-white/5">
+                    <div class="w-10 h-10 bg-gradient-to-br from-academic-blue to-purple-600 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                        A
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-medium text-[#0F172A] dark:text-[#E5E7EB] truncate">Admin User</p>
+                        <p class="text-xs text-[#475569] dark:text-[#94a3b8] truncate">admin@excellence.edu</p>
+                    </div>
+                </div>
+                <a href="index.html" class="mt-3 flex items-center px-4 py-2 text-sm font-medium rounded-lg text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>
+                    Logout
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="lg:pl-64">
+        <!-- Top Header -->
+        <header class="sticky top-0 z-30 bg-white dark:bg-[#1e293b] border-b border-gray-200 dark:border-gray-700">
+            <div class="px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Mobile Menu Button -->
+                    <button id="sidebar-toggle" class="lg:hidden text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
-                        <span>Logout</span>
-                    </a>
+                    </button>
+
+                    <!-- Page Title -->
+                    <div class="flex-1 lg:flex-none">
+                        <h1 class="text-xl font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Dashboard</h1>
+                    </div>
+
+                    <!-- Right Side Actions -->
+                    <div class="flex items-center space-x-4">
+                        <!-- Theme Toggle -->
+                        <button id="theme-toggle" class="p-2 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 rounded-lg hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                            <svg id="theme-icon-light" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                            </svg>
+                            <svg id="theme-icon-dark" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Dashboard Content -->
-    <div class="pt-8 pb-12 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
+        <!-- Dashboard Content -->
+        <div class="pt-8 pb-12 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
             <!-- Header -->
             <div class="mb-8 text-center">
                 <h1 class="text-3xl md:text-4xl font-heading font-bold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">
@@ -490,7 +668,86 @@
             window.URL.revokeObjectURL(url);
         }
 
+        // Update theme icons for dual-icon structure
+        function updateThemeIcons() {
+            const html = document.documentElement;
+            const isDark = html.classList.contains('dark');
+            const lightIcon = document.getElementById('theme-icon-light');
+            const darkIcon = document.getElementById('theme-icon-dark');
+            
+            if (lightIcon && darkIcon) {
+                if (isDark) {
+                    lightIcon.classList.remove('hidden');
+                    lightIcon.classList.add('block');
+                    darkIcon.classList.remove('block');
+                    darkIcon.classList.add('hidden');
+                } else {
+                    lightIcon.classList.remove('block');
+                    lightIcon.classList.add('hidden');
+                    darkIcon.classList.remove('hidden');
+                    darkIcon.classList.add('block');
+                }
+            }
+        }
+
+        // Override theme toggle to update icons
+        const originalToggleTheme = window.toggleTheme;
+        if (originalToggleTheme) {
+            window.toggleTheme = function() {
+                originalToggleTheme();
+                setTimeout(updateThemeIcons, 10);
+            };
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize theme icons
+            updateThemeIcons();
+            
+            // Watch for theme changes
+            const observer = new MutationObserver(updateThemeIcons);
+            observer.observe(document.documentElement, {
+                attributes: true,
+                attributeFilter: ['class']
+            });
+
+            // Sidebar Toggle for Mobile
+            const sidebar = document.getElementById('sidebar');
+            const sidebarToggle = document.getElementById('sidebar-toggle');
+            const sidebarClose = document.getElementById('sidebar-close');
+            const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+            function openSidebar() {
+                sidebar.classList.remove('-translate-x-full');
+                sidebarOverlay.classList.remove('hidden');
+            }
+
+            function closeSidebar() {
+                sidebar.classList.add('-translate-x-full');
+                sidebarOverlay.classList.add('hidden');
+            }
+
+            if (sidebarToggle) {
+                sidebarToggle.addEventListener('click', openSidebar);
+            }
+
+            if (sidebarClose) {
+                sidebarClose.addEventListener('click', closeSidebar);
+            }
+
+            if (sidebarOverlay) {
+                sidebarOverlay.addEventListener('click', closeSidebar);
+            }
+
+            // Close sidebar when clicking nav links on mobile
+            document.querySelectorAll('#sidebar nav a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (window.innerWidth < 1024) {
+                        closeSidebar();
+                    }
+                });
+            });
+
             // Modal Close
             document.getElementById('modal-close').addEventListener('click', closeModal);
             document.getElementById('modal-overlay').addEventListener('click', function(e) {
