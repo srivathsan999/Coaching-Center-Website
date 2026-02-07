@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Excellence Academy</title>
     <meta name="description" content="Learn about Excellence Academy's mission, vision, and teaching methodology">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
-    
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
-    
+
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
@@ -39,18 +43,25 @@
             }
         }
     </script>
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
+
 <body class="bg-[#FAF8F5] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
-    
+
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark border-b border-white/20 dark:border-white/10">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,109 +69,168 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="index.html" class="flex items-center space-x-2">
-                        <div class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
+                        <div
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
                             <span class="text-white font-heading font-bold text-xl">E</span>
                         </div>
-                        <span class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB]">Excellence Academy</span>
+                        <span
+                            class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] whitespace-nowrap">Excellence
+                            Academy</span>
                     </a>
                 </div>
-                
+
                 <!-- Menu -->
                 <div class="hidden xl:flex items-center xl:space-x-8 xl:ml-8">
                     <!-- Home Dropdown -->
                     <div class="relative group">
-                        <button class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1" aria-haspopup="true" aria-expanded="false">
+                        <button
+                            class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1"
+                            aria-haspopup="true" aria-expanded="false">
                             <span>Home</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
-                            <a href="index.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home</a>
-                            <a href="home2.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home 2</a>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
+                            <a href="index.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home</a>
+                            <a href="home2.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home
+                                2</a>
                         </div>
                     </div>
-                    <a href="courses.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a>
-                    <a href="about.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">About</a>
-                    <a href="faculty.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Faculty</a>
-                    <a href="results.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Results</a>
-                    <a href="admissions.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Admissions</a>
-                    <a href="contact.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a>
+                    <a href="courses.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a>
+                    <a href="about.html"
+                        class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">About</a>
+                    <a href="faculty.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Faculty</a>
+                    <a href="results.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Results</a>
+                    <a href="admissions.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Admissions</a>
+                    <a href="contact.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a>
                     <!-- Dashboard Dropdown -->
                     <div class="relative group">
-                        <button class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1">
+                        <button
+                            class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1">
                             <span>Dashboard</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
-                            <a href="user-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">User Dashboard</a>
-                            <a href="admin-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Admin Dashboard</a>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
+                            <a href="user-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">User
+                                Dashboard</a>
+                            <a href="admin-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Admin
+                                Dashboard</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-toggle" class="xl:hidden p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle menu">
-                    <svg class="w-6 h-6 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <button id="mobile-menu-toggle"
+                    class="xl:hidden p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition"
+                    aria-label="Toggle menu">
+                    <svg class="w-6 h-6 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
-                
+
                 <!-- Theme Toggle & Auth -->
                 <div class="hidden xl:flex items-center xl:space-x-4 xl:ml-8">
-                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
-                        <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition"
+                        aria-label="Toggle theme">
+                        <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
-                    <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
-                    <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
+                    <a href="login.html"
+                        class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
+                    <a href="signup.html"
+                        class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                 </div>
             </div>
-            
+
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden xl:hidden pb-4">
                 <div class="flex flex-col space-y-2">
                     <!-- Home Dropdown (Mobile) -->
                     <div class="relative">
-                        <button id="mobile-home-dropdown-btn" class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition" aria-haspopup="true" aria-expanded="false">
+                        <button id="mobile-home-dropdown-btn"
+                            class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition"
+                            aria-haspopup="true" aria-expanded="false">
                             <span>Home</span>
-                            <svg id="mobile-home-dropdown-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg id="mobile-home-dropdown-icon" class="w-4 h-4 transform transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div id="mobile-home-dropdown-menu" class="hidden mt-1 ml-4 space-y-1">
-                            <a href="index.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home</a>
-                            <a href="home2.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home 2</a>
+                            <a href="index.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home</a>
+                            <a href="home2.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home
+                                2</a>
                         </div>
                     </div>
-                    <a href="courses.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Courses</a>
-                    <a href="about.html" class="px-4 py-2 text-academic-blue dark:text-[#3B82F6] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">About</a>
-                    <a href="faculty.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Faculty</a>
-                    <a href="results.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
-                    <a href="admissions.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
-                    <a href="contact.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
+                    <a href="courses.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Courses</a>
+                    <a href="about.html"
+                        class="px-4 py-2 text-academic-blue dark:text-[#3B82F6] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">About</a>
+                    <a href="faculty.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Faculty</a>
+                    <a href="results.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
+                    <a href="admissions.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
+                    <a href="contact.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
                     <!-- Dashboard Dropdown (Mobile) -->
                     <div class="relative">
-                        <button id="mobile-dashboard-dropdown-btn" class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition" aria-haspopup="true" aria-expanded="false">
+                        <button id="mobile-dashboard-dropdown-btn"
+                            class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition"
+                            aria-haspopup="true" aria-expanded="false">
                             <span>Dashboard</span>
-                            <svg id="mobile-dashboard-dropdown-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg id="mobile-dashboard-dropdown-icon" class="w-4 h-4 transform transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div id="mobile-dashboard-dropdown-menu" class="hidden mt-1 ml-4 space-y-1">
-                            <a href="user-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">User Dashboard</a>
-                            <a href="admin-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admin Dashboard</a>
+                            <a href="user-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">User
+                                Dashboard</a>
+                            <a href="admin-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admin
+                                Dashboard</a>
                         </div>
                     </div>
                     <div class="flex items-center justify-between px-4 py-2 space-x-2">
-                        <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
-                        <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
-                        <button id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
-                            <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        <a href="login.html"
+                            class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
+                        <a href="signup.html"
+                            class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
+                        <button id="theme-toggle-mobile"
+                            class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition"
+                            aria-label="Toggle theme">
+                            <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                             </svg>
                         </button>
                     </div>
@@ -176,7 +246,8 @@
                 About Excellence Academy
             </h1>
             <p class="text-lg text-[#475569] dark:text-[#94a3b8] max-w-2xl mx-auto">
-                Empowering students and professionals to achieve excellence through quality education and expert guidance.
+                Empowering students and professionals to achieve excellence through quality education and expert
+                guidance.
             </p>
         </div>
     </section>
@@ -187,28 +258,39 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Mission -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-8 shadow-lg">
-                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-6 mx-auto">
+                    <div
+                        class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-6 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB] text-center">Our Mission</h2>
+                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB] text-center">Our
+                        Mission</h2>
                     <p class="text-[#475569] dark:text-[#94a3b8] leading-relaxed">
-                        To provide accessible, high-quality education that empowers individuals to reach their full potential. We are committed to fostering a learning environment that combines academic excellence with practical skills, preparing our students for success in their chosen careers.
+                        To provide accessible, high-quality education that empowers individuals to reach their full
+                        potential. We are committed to fostering a learning environment that combines academic
+                        excellence with practical skills, preparing our students for success in their chosen careers.
                     </p>
                 </div>
-                
+
                 <!-- Vision -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-8 shadow-lg">
-                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-6 mx-auto">
+                    <div
+                        class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-6 mx-auto">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                         </svg>
                     </div>
-                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB] text-center">Our Vision</h2>
+                    <h2 class="text-2xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB] text-center">Our
+                        Vision</h2>
                     <p class="text-[#475569] dark:text-[#94a3b8] leading-relaxed">
-                        To become a leading educational institution recognized for innovation, excellence, and student success. We envision a future where every student has access to world-class education and the tools needed to excel in an ever-evolving global landscape.
+                        To become a leading educational institution recognized for innovation, excellence, and student
+                        success. We envision a future where every student has access to world-class education and the
+                        tools needed to excel in an ever-evolving global landscape.
                     </p>
                 </div>
             </div>
@@ -218,40 +300,50 @@
     <!-- Teaching Methodology Section -->
     <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F3F0] dark:bg-[#1e293b]/50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
+            <h2
+                class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
                 Our Teaching Methodology
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Method 1 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <div
+                        class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <span class="text-white font-heading font-bold text-xl">1</span>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Interactive Learning</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">
+                        Interactive Learning</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
-                        We believe in active participation. Our classes are designed to encourage discussion, collaboration, and hands-on practice.
+                        We believe in active participation. Our classes are designed to encourage discussion,
+                        collaboration, and hands-on practice.
                     </p>
                 </div>
-                
+
                 <!-- Method 2 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <div
+                        class="w-12 h-12 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <span class="text-white font-heading font-bold text-xl">2</span>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Practical Application</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">
+                        Practical Application</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
-                        Theory meets practice. Every concept is reinforced with real-world projects and case studies relevant to industry needs.
+                        Theory meets practice. Every concept is reinforced with real-world projects and case studies
+                        relevant to industry needs.
                     </p>
                 </div>
-                
+
                 <!-- Method 3 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg">
-                    <div class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4 mx-auto">
+                    <div
+                        class="w-12 h-12 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mb-4 mx-auto">
                         <span class="text-white font-heading font-bold text-xl">3</span>
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">Personalized Support</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB] text-center">
+                        Personalized Support</h3>
                     <p class="text-[#475569] dark:text-[#94a3b8]">
-                        Every student is unique. We provide individualized attention and support to help each learner achieve their goals.
+                        Every student is unique. We provide individualized attention and support to help each learner
+                        achieve their goals.
                     </p>
                 </div>
             </div>
@@ -270,37 +362,49 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Instructor 1 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
-                    <div class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-academic-blue dark:ring-[#3B82F6]">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face" alt="Dr. Sarah Williams" class="w-full h-full object-cover">
+                    <div
+                        class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-academic-blue dark:ring-[#3B82F6]">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face"
+                            alt="Dr. Sarah Williams" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Dr. Sarah Williams</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Dr. Sarah
+                        Williams</h3>
                     <p class="text-warm-gold dark:text-accent-gold font-medium mb-3">Business Management Expert</p>
                     <p class="text-sm text-[#475569] dark:text-[#94a3b8]">
-                        15+ years of experience in corporate training and strategic management. MBA from Harvard Business School.
+                        15+ years of experience in corporate training and strategic management. MBA from Harvard
+                        Business School.
                     </p>
                 </div>
-                
+
                 <!-- Instructor 2 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
-                    <div class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-warm-gold dark:ring-accent-gold">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Prof. Michael Johnson" class="w-full h-full object-cover">
+                    <div
+                        class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-warm-gold dark:ring-accent-gold">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+                            alt="Prof. Michael Johnson" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Prof. Michael Johnson</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Prof. Michael
+                        Johnson</h3>
                     <p class="text-academic-blue dark:text-[#3B82F6] font-medium mb-3">Data Science Specialist</p>
                     <p class="text-sm text-[#475569] dark:text-[#94a3b8]">
-                        PhD in Computer Science with expertise in machine learning and data analytics. Former lead data scientist at tech giants.
+                        PhD in Computer Science with expertise in machine learning and data analytics. Former lead data
+                        scientist at tech giants.
                     </p>
                 </div>
-                
+
                 <!-- Instructor 3 -->
                 <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center">
-                    <div class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-academic-blue dark:ring-[#3B82F6]">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face" alt="Emily Chen" class="w-full h-full object-cover">
+                    <div
+                        class="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4 ring-2 ring-academic-blue dark:ring-[#3B82F6]">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face"
+                            alt="Emily Chen" class="w-full h-full object-cover">
                     </div>
-                    <h3 class="text-xl font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Emily Chen</h3>
+                    <h3 class="text-xl font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Emily Chen
+                    </h3>
                     <p class="text-warm-gold dark:text-accent-gold font-medium mb-3">Language & Communication</p>
                     <p class="text-sm text-[#475569] dark:text-[#94a3b8]">
-                        Certified TESOL instructor with 12 years of experience. Specializes in business English and professional communication.
+                        Certified TESOL instructor with 12 years of experience. Specializes in business English and
+                        professional communication.
                     </p>
                 </div>
             </div>
@@ -310,52 +414,69 @@
     <!-- Values Section -->
     <section class="py-16 px-4 sm:px-6 lg:px-8 bg-[#F5F3F0] dark:bg-[#1e293b]/50">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
+            <h2
+                class="text-3xl md:text-4xl font-heading font-bold text-center mb-12 text-[#0F172A] dark:text-[#E5E7EB]">
                 Our Core Values
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Excellence Card -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                         </svg>
                     </div>
                     <h3 class="font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Excellence</h3>
-                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Striving for the highest standards in everything we do.</p>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Striving for the highest standards in
+                        everything we do.</p>
                 </div>
-                
+
                 <!-- Integrity Card -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
                     </div>
                     <h3 class="font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Integrity</h3>
-                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Building trust through honesty and ethical practices.</p>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Building trust through honesty and ethical
+                        practices.</p>
                 </div>
-                
+
                 <!-- Innovation Card -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
                         </svg>
                     </div>
                     <h3 class="font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Innovation</h3>
-                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Embracing new methods and technologies for better learning.</p>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Embracing new methods and technologies for
+                        better learning.</p>
                 </div>
-                
+
                 <!-- Commitment Card -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div
+                        class="w-16 h-16 bg-warm-gold dark:bg-accent-gold rounded-lg flex items-center justify-center mx-auto mb-4 transition-transform duration-300 hover:scale-110">
                         <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                         </svg>
                     </div>
                     <h3 class="font-heading font-semibold mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Commitment</h3>
-                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Dedicated to student success and continuous improvement.</p>
+                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Dedicated to student success and continuous
+                        improvement.</p>
                 </div>
             </div>
         </div>
@@ -368,27 +489,38 @@
                 <!-- About -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-8 h-8 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
+                        <div
+                            class="w-8 h-8 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
                             <span class="text-white font-heading font-bold">E</span>
                         </div>
-                        <span class="font-heading font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Excellence Academy</span>
+                        <span
+                            class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] whitespace-nowrap">Excellence
+                            Academy</span>
                     </div>
                     <p class="text-sm text-[#475569] dark:text-[#94a3b8]">
                         Empowering students through quality education and expert coaching since 2009.
                     </p>
                 </div>
-                
+
                 <!-- Quick Links -->
                 <div>
                     <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a></li>
-                        <li><a href="courses.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a></li>
-                        <li><a href="about.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About Us</a></li>
-                        <li><a href="contact.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a></li>
+                        <li><a href="index.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a>
+                        </li>
+                        <li><a href="courses.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About
+                                Us</a></li>
+                        <li><a href="contact.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a>
+                        </li>
                     </ul>
                 </div>
-                
+
                 <!-- Contact Info -->
                 <div>
                     <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Contact</h3>
@@ -399,30 +531,37 @@
                         <li>Email: info@excellenceacademy.com</li>
                     </ul>
                 </div>
-                
+
                 <!-- Social -->
                 <div>
                     <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Follow Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                        <a href="#"
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                             </svg>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                        <a href="#"
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                             </svg>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                        <a href="#"
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-sm text-[#475569] dark:text-[#94a3b8]">
+            <div
+                class="border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-sm text-[#475569] dark:text-[#94a3b8]">
                 <p>&copy; 2025 Excellence Academy. All rights reserved.</p>
             </div>
         </div>
@@ -430,22 +569,22 @@
 
     <!-- Theme Toggle Script -->
     <script src="assets/js/theme.js"></script>
-    
+
     <!-- Mobile Menu Toggle & Dropdown Functionality -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
             const themeToggleMobile = document.getElementById('theme-toggle-mobile');
-            
+
             if (mobileMenuToggle && mobileMenu) {
-                mobileMenuToggle.addEventListener('click', function() {
+                mobileMenuToggle.addEventListener('click', function () {
                     mobileMenu.classList.toggle('hidden');
                 });
             }
-            
+
             if (themeToggleMobile) {
-                themeToggleMobile.addEventListener('click', function() {
+                themeToggleMobile.addEventListener('click', function () {
                     if (window.toggleTheme) {
                         window.toggleTheme();
                     }
@@ -457,12 +596,12 @@
                 const button = document.getElementById(buttonId);
                 const menu = document.getElementById(menuId);
                 const icon = document.getElementById(iconId);
-                
+
                 if (button && menu) {
-                    button.addEventListener('click', function(e) {
+                    button.addEventListener('click', function (e) {
                         e.preventDefault();
                         e.stopPropagation();
-                        
+
                         // Close all other mobile dropdowns first
                         document.querySelectorAll('[id^="mobile-"][id$="-dropdown-menu"]').forEach(m => {
                             if (m !== menu) {
@@ -479,7 +618,7 @@
                                 btn.setAttribute('aria-expanded', 'false');
                             }
                         });
-                        
+
                         // Toggle this dropdown
                         const isVisible = !menu.classList.contains('hidden');
                         if (isVisible) {
@@ -501,4 +640,5 @@
         });
     </script>
 </body>
+
 </html>

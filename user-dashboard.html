@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard - Excellence Academy</title>
     <meta name="description" content="Your personal dashboard at Excellence Academy">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
-    
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
-    
+
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
@@ -39,18 +43,25 @@
             }
         }
     </script>
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
+
 <body class="bg-[#FAF8F5] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
-    
+
     <!-- Simple Header -->
     <header class="bg-academic-blue dark:bg-[#3B82F6]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,15 +72,18 @@
                         <div class="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-lg flex items-center justify-center">
                             <span class="text-academic-blue font-heading font-bold text-base sm:text-xl">E</span>
                         </div>
-                        <span class="font-heading font-semibold text-sm sm:text-lg text-white">Excellence Academy</span>
+                        <span class="font-heading font-semibold text-lg text-white whitespace-nowrap">Excellence
+                            Academy</span>
                     </a>
                 </div>
-                
+
                 <!-- Logout Button -->
                 <div class="flex items-center">
-                    <a href="index.html" class="px-2 py-1.5 sm:px-4 sm:py-2 bg-white text-academic-blue rounded-lg text-xs sm:text-sm font-medium hover:opacity-90 transition flex items-center space-x-1 sm:space-x-2">
+                    <a href="index.html"
+                        class="px-2 py-1.5 sm:px-4 sm:py-2 bg-white text-academic-blue rounded-lg text-xs sm:text-sm font-medium hover:opacity-90 transition flex items-center space-x-1 sm:space-x-2">
                         <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                         </svg>
                         <span>Logout</span>
                     </a>
@@ -92,11 +106,15 @@
             <!-- Stats Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                 <!-- Enrolled Courses -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                     <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        <div
+                            class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                             </svg>
                         </div>
                         <span class="text-2xl font-bold text-[#0F172A] dark:text-[#E5E7EB]">3</span>
@@ -106,11 +124,15 @@
                 </div>
 
                 <!-- Progress -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                     <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        <div
+                            class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                             </svg>
                         </div>
                         <span class="text-2xl font-bold text-[#0F172A] dark:text-[#E5E7EB]">78%</span>
@@ -120,11 +142,15 @@
                 </div>
 
                 <!-- Assignments -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                     <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        <div
+                            class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                             </svg>
                         </div>
                         <span class="text-2xl font-bold text-[#0F172A] dark:text-[#E5E7EB]">5</span>
@@ -134,11 +160,15 @@
                 </div>
 
                 <!-- Achievements -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
                     <div class="flex items-center justify-between mb-4">
-                        <div class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        <div
+                            class="w-12 h-12 bg-academic-blue/10 dark:bg-[#3B82F6]/10 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-academic-blue dark:text-[#3B82F6]" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                             </svg>
                         </div>
                         <span class="text-2xl font-bold text-[#0F172A] dark:text-[#E5E7EB]">12</span>
@@ -155,64 +185,91 @@
                     <!-- Enrolled Courses -->
                     <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg p-6">
                         <div class="flex items-center justify-between mb-6">
-                            <h2 class="text-2xl font-heading font-bold text-[#0F172A] dark:text-[#E5E7EB]">My Courses</h2>
-                            <a href="courses.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition text-sm">View All →</a>
+                            <h2 class="text-2xl font-heading font-bold text-[#0F172A] dark:text-[#E5E7EB]">My Courses
+                            </h2>
+                            <a href="courses.html"
+                                class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition text-sm">View
+                                All →</a>
                         </div>
                         <div class="space-y-4">
                             <!-- Course 1 -->
-                            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition">
+                            <div
+                                class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition">
                                 <div class="flex items-start justify-between">
                                     <div class="flex-1">
-                                        <h3 class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] mb-2">IIT-JEE Advanced</h3>
-                                        <p class="text-sm text-[#475569] dark:text-[#94a3b8] mb-3">Physics, Chemistry, Mathematics</p>
+                                        <h3
+                                            class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] mb-2">
+                                            IIT-JEE Advanced</h3>
+                                        <p class="text-sm text-[#475569] dark:text-[#94a3b8] mb-3">Physics, Chemistry,
+                                            Mathematics</p>
                                         <div class="flex items-center space-x-4 mb-3">
-                                            <span class="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 rounded-full">In Progress</span>
-                                            <span class="text-xs text-[#475569] dark:text-[#94a3b8]">Started: Jan 15, 2024</span>
+                                            <span
+                                                class="text-xs px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 rounded-full">In
+                                                Progress</span>
+                                            <span class="text-xs text-[#475569] dark:text-[#94a3b8]">Started: Jan 15,
+                                                2024</span>
                                         </div>
                                         <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-2">
-                                            <div class="bg-academic-blue dark:bg-[#3B82F6] h-2 rounded-full" style="width: 85%"></div>
+                                            <div class="bg-academic-blue dark:bg-[#3B82F6] h-2 rounded-full"
+                                                style="width: 85%"></div>
                                         </div>
                                         <p class="text-xs text-[#475569] dark:text-[#94a3b8]">85% Complete</p>
                                     </div>
-                                    <button class="ml-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Continue</button>
+                                    <button
+                                        class="ml-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Continue</button>
                                 </div>
                             </div>
 
                             <!-- Course 2 -->
-                            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition">
+                            <div
+                                class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition">
                                 <div class="flex items-start justify-between">
                                     <div class="flex-1">
-                                        <h3 class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] mb-2">NEET Preparation</h3>
-                                        <p class="text-sm text-[#475569] dark:text-[#94a3b8] mb-3">Physics, Chemistry, Biology</p>
+                                        <h3
+                                            class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] mb-2">
+                                            NEET Preparation</h3>
+                                        <p class="text-sm text-[#475569] dark:text-[#94a3b8] mb-3">Physics, Chemistry,
+                                            Biology</p>
                                         <div class="flex items-center space-x-4 mb-3">
-                                            <span class="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full">Active</span>
-                                            <span class="text-xs text-[#475569] dark:text-[#94a3b8]">Started: Feb 1, 2024</span>
+                                            <span
+                                                class="text-xs px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full">Active</span>
+                                            <span class="text-xs text-[#475569] dark:text-[#94a3b8]">Started: Feb 1,
+                                                2024</span>
                                         </div>
                                         <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-2">
-                                            <div class="bg-academic-blue dark:bg-[#3B82F6] h-2 rounded-full" style="width: 65%"></div>
+                                            <div class="bg-academic-blue dark:bg-[#3B82F6] h-2 rounded-full"
+                                                style="width: 65%"></div>
                                         </div>
                                         <p class="text-xs text-[#475569] dark:text-[#94a3b8]">65% Complete</p>
                                     </div>
-                                    <button class="ml-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Continue</button>
+                                    <button
+                                        class="ml-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Continue</button>
                                 </div>
                             </div>
 
                             <!-- Course 3 -->
-                            <div class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition">
+                            <div
+                                class="border border-gray-200 dark:border-gray-700 rounded-lg p-4 hover:shadow-md transition">
                                 <div class="flex items-start justify-between">
                                     <div class="flex-1">
-                                        <h3 class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] mb-2">Foundation Course</h3>
+                                        <h3
+                                            class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] mb-2">
+                                            Foundation Course</h3>
                                         <p class="text-sm text-[#475569] dark:text-[#94a3b8] mb-3">All Subjects</p>
                                         <div class="flex items-center space-x-4 mb-3">
-                                            <span class="text-xs px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-400 rounded-full">New</span>
-                                            <span class="text-xs text-[#475569] dark:text-[#94a3b8]">Started: Mar 10, 2024</span>
+                                            <span
+                                                class="text-xs px-2 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-400 rounded-full">New</span>
+                                            <span class="text-xs text-[#475569] dark:text-[#94a3b8]">Started: Mar 10,
+                                                2024</span>
                                         </div>
                                         <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2 mb-2">
-                                            <div class="bg-academic-blue dark:bg-[#3B82F6] h-2 rounded-full" style="width: 30%"></div>
+                                            <div class="bg-academic-blue dark:bg-[#3B82F6] h-2 rounded-full"
+                                                style="width: 30%"></div>
                                         </div>
                                         <p class="text-xs text-[#475569] dark:text-[#94a3b8]">30% Complete</p>
                                     </div>
-                                    <button class="ml-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Continue</button>
+                                    <button
+                                        class="ml-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Continue</button>
                                 </div>
                             </div>
                         </div>
@@ -220,45 +277,61 @@
 
                     <!-- Upcoming Classes -->
                     <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg p-6">
-                        <h2 class="text-2xl font-heading font-bold mb-6 text-[#0F172A] dark:text-[#E5E7EB]">Upcoming Classes</h2>
+                        <h2 class="text-2xl font-heading font-bold mb-6 text-[#0F172A] dark:text-[#E5E7EB]">Upcoming
+                            Classes</h2>
                         <div class="space-y-4">
-                            <div class="flex items-center p-4 bg-gray-50 dark:bg-white/5 rounded-lg border-l-4 border-blue-500">
-                                <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex flex-col items-center justify-center text-white mr-4">
+                            <div
+                                class="flex items-center p-4 bg-gray-50 dark:bg-white/5 rounded-lg border-l-4 border-blue-500">
+                                <div
+                                    class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex flex-col items-center justify-center text-white mr-4">
                                     <span class="text-xs font-medium">TODAY</span>
                                     <span class="text-xl font-bold">15</span>
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Physics - Mechanics</h3>
-                                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">IIT-JEE Advanced • 3:00 PM - 4:30 PM</p>
+                                    <h3 class="font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Physics - Mechanics
+                                    </h3>
+                                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">IIT-JEE Advanced • 3:00 PM -
+                                        4:30 PM</p>
                                     <p class="text-xs text-[#475569] dark:text-[#94a3b8] mt-1">Prof. Michael Johnson</p>
                                 </div>
-                                <button class="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Join</button>
+                                <button
+                                    class="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Join</button>
                             </div>
 
-                            <div class="flex items-center p-4 bg-gray-50 dark:bg-white/5 rounded-lg border-l-4 border-green-500">
-                                <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex flex-col items-center justify-center text-white mr-4">
+                            <div
+                                class="flex items-center p-4 bg-gray-50 dark:bg-white/5 rounded-lg border-l-4 border-green-500">
+                                <div
+                                    class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex flex-col items-center justify-center text-white mr-4">
                                     <span class="text-xs font-medium">TOM</span>
                                     <span class="text-xl font-bold">16</span>
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Chemistry - Organic</h3>
-                                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">NEET Preparation • 10:00 AM - 11:30 AM</p>
+                                    <h3 class="font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Chemistry - Organic
+                                    </h3>
+                                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">NEET Preparation • 10:00 AM -
+                                        11:30 AM</p>
                                     <p class="text-xs text-[#475569] dark:text-[#94a3b8] mt-1">Dr. Sarah Williams</p>
                                 </div>
-                                <button class="px-4 py-2 bg-green-500 text-white rounded-lg text-sm font-medium hover:opacity-90 transition">View</button>
+                                <button
+                                    class="px-4 py-2 bg-green-500 text-white rounded-lg text-sm font-medium hover:opacity-90 transition">View</button>
                             </div>
 
-                            <div class="flex items-center p-4 bg-gray-50 dark:bg-white/5 rounded-lg border-l-4 border-orange-500">
-                                <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex flex-col items-center justify-center text-white mr-4">
+                            <div
+                                class="flex items-center p-4 bg-gray-50 dark:bg-white/5 rounded-lg border-l-4 border-orange-500">
+                                <div
+                                    class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex flex-col items-center justify-center text-white mr-4">
                                     <span class="text-xs font-medium">THU</span>
                                     <span class="text-xl font-bold">17</span>
                                 </div>
                                 <div class="flex-1">
-                                    <h3 class="font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Mathematics - Calculus</h3>
-                                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Foundation Course • 2:00 PM - 3:30 PM</p>
+                                    <h3 class="font-semibold text-[#0F172A] dark:text-[#E5E7EB]">Mathematics - Calculus
+                                    </h3>
+                                    <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Foundation Course • 2:00 PM -
+                                        3:30 PM</p>
                                     <p class="text-xs text-[#475569] dark:text-[#94a3b8] mt-1">Dr. Robert Kim</p>
                                 </div>
-                                <button class="px-4 py-2 bg-orange-500 text-white rounded-lg text-sm font-medium hover:opacity-90 transition">View</button>
+                                <button
+                                    class="px-4 py-2 bg-orange-500 text-white rounded-lg text-sm font-medium hover:opacity-90 transition">View</button>
                             </div>
                         </div>
                     </div>
@@ -269,77 +342,94 @@
                     <!-- Profile Card -->
                     <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg p-6">
                         <div class="flex items-center mb-4">
-                            <div class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-full flex items-center justify-center mr-4">
+                            <div
+                                class="w-16 h-16 bg-academic-blue dark:bg-[#3B82F6] rounded-full flex items-center justify-center mr-4">
                                 <span class="text-2xl font-bold text-white">JD</span>
                             </div>
                             <div>
-                                <h3 class="font-heading font-bold text-lg text-[#0F172A] dark:text-[#E5E7EB]">John Doe</h3>
+                                <h3 class="font-heading font-bold text-lg text-[#0F172A] dark:text-[#E5E7EB]">John Doe
+                                </h3>
                                 <p class="text-sm text-[#475569] dark:text-[#94a3b8]">Student ID: STU2024001</p>
                             </div>
                         </div>
                         <div class="space-y-2 text-sm text-[#0F172A] dark:text-[#E5E7EB]">
                             <div class="flex items-center">
                                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
                                 <span class="text-[#475569] dark:text-[#94a3b8]">john.doe@example.com</span>
                             </div>
                             <div class="flex items-center">
                                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
                                 <span class="text-[#475569] dark:text-[#94a3b8]">+1 (555) 123-4567</span>
                             </div>
                         </div>
-                        <button class="w-full mt-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition">Edit Profile</button>
+                        <button
+                            class="w-full mt-4 px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition">Edit
+                            Profile</button>
                     </div>
 
                     <!-- Payment History -->
                     <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg p-6">
-                        <h2 class="text-xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Recent Payments</h2>
+                        <h2 class="text-xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Recent
+                            Payments</h2>
                         <div class="space-y-3">
-                            <div class="flex items-center justify-between p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                            <div
+                                class="flex items-center justify-between p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
                                 <div>
                                     <p class="font-medium text-[#0F172A] dark:text-[#E5E7EB] text-sm">IIT-JEE Fee</p>
                                     <p class="text-xs text-[#475569] dark:text-[#94a3b8]">Mar 1, 2024</p>
                                 </div>
                                 <div class="text-right">
                                     <p class="font-bold text-green-600 dark:text-green-400">₹45,000</p>
-                                    <span class="text-xs px-2 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full">Paid</span>
+                                    <span
+                                        class="text-xs px-2 py-0.5 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-400 rounded-full">Paid</span>
                                 </div>
                             </div>
 
-                            <div class="flex items-center justify-between p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                            <div
+                                class="flex items-center justify-between p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                                 <div>
                                     <p class="font-medium text-[#0F172A] dark:text-[#E5E7EB] text-sm">NEET Fee</p>
                                     <p class="text-xs text-[#475569] dark:text-[#94a3b8]">Feb 15, 2024</p>
                                 </div>
                                 <div class="text-right">
                                     <p class="font-bold text-blue-600 dark:text-blue-400">₹45,000</p>
-                                    <span class="text-xs px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 rounded-full">Paid</span>
+                                    <span
+                                        class="text-xs px-2 py-0.5 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-400 rounded-full">Paid</span>
                                 </div>
                             </div>
 
-                            <div class="flex items-center justify-between p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+                            <div
+                                class="flex items-center justify-between p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                                 <div>
                                     <p class="font-medium text-[#0F172A] dark:text-[#E5E7EB] text-sm">Foundation Fee</p>
                                     <p class="text-xs text-[#475569] dark:text-[#94a3b8]">Mar 10, 2024</p>
                                 </div>
                                 <div class="text-right">
                                     <p class="font-bold text-yellow-600 dark:text-yellow-400">₹25,000</p>
-                                    <span class="text-xs px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-400 rounded-full">Pending</span>
+                                    <span
+                                        class="text-xs px-2 py-0.5 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-400 rounded-full">Pending</span>
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="block text-center mt-4 text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition text-sm">View All Payments →</a>
+                        <a href="#"
+                            class="block text-center mt-4 text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition text-sm">View
+                            All Payments →</a>
                     </div>
 
                     <!-- Notifications -->
                     <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg p-6">
-                        <h2 class="text-xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Notifications</h2>
+                        <h2 class="text-xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Notifications
+                        </h2>
                         <div class="space-y-3">
                             <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border-l-4 border-blue-500">
-                                <p class="text-sm font-medium text-[#0F172A] dark:text-[#E5E7EB]">New assignment posted</p>
+                                <p class="text-sm font-medium text-[#0F172A] dark:text-[#E5E7EB]">New assignment posted
+                                </p>
                                 <p class="text-xs text-[#475569] dark:text-[#94a3b8] mt-1">2 hours ago</p>
                             </div>
                             <div class="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg border-l-4 border-green-500">
@@ -355,12 +445,21 @@
 
                     <!-- Quick Actions -->
                     <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg p-6">
-                        <h2 class="text-xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Quick Actions</h2>
+                        <h2 class="text-xl font-heading font-bold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Quick Actions
+                        </h2>
                         <div class="grid grid-cols-2 gap-3">
-                            <button class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">View Materials</button>
-                            <button class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">Submit Work</button>
-                            <button class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">Book Session</button>
-                            <button class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">Contact Support</button>
+                            <button
+                                class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">View
+                                Materials</button>
+                            <button
+                                class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">Submit
+                                Work</button>
+                            <button
+                                class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">Book
+                                Session</button>
+                            <button
+                                class="p-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition text-sm">Contact
+                                Support</button>
                         </div>
                     </div>
                 </div>
@@ -371,9 +470,10 @@
 
     <!-- Theme Toggle Script -->
     <script src="assets/js/theme.js"></script>
-    
+
     <!-- Toast Notification -->
-    <div id="toast" class="fixed top-20 right-4 z-50 bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl p-4 transform translate-x-full transition-transform duration-300">
+    <div id="toast"
+        class="fixed top-20 right-4 z-50 bg-white dark:bg-[#1e293b] border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl p-4 transform translate-x-full transition-transform duration-300">
         <div class="flex items-center space-x-3">
             <div id="toast-icon" class="w-6 h-6"></div>
             <p id="toast-message" class="text-sm font-medium text-[#0F172A] dark:text-[#E5E7EB]"></p>
@@ -382,19 +482,22 @@
 
     <!-- Modal Overlay -->
     <div id="modal-overlay" class="fixed inset-0 bg-black/50 z-50 hidden items-center justify-center">
-        <div id="modal-content" class="bg-white dark:bg-[#1e293b] rounded-xl shadow-2xl p-6 max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+        <div id="modal-content"
+            class="bg-white dark:bg-[#1e293b] rounded-xl shadow-2xl p-6 max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
             <div class="flex items-center justify-between mb-4">
                 <h3 id="modal-title" class="text-xl font-heading font-bold text-[#0F172A] dark:text-[#E5E7EB]"></h3>
-                <button id="modal-close" class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
+                <button id="modal-close"
+                    class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <div id="modal-body" class="text-[#475569] dark:text-[#94a3b8]"></div>
         </div>
     </div>
-    
+
     <!-- Mobile Menu Toggle & Dashboard Functionality -->
     <script>
         // Toast Notification Function
@@ -402,9 +505,9 @@
             const toast = document.getElementById('toast');
             const toastMessage = document.getElementById('toast-message');
             const toastIcon = document.getElementById('toast-icon');
-            
+
             toastMessage.textContent = message;
-            
+
             // Set icon based on type
             if (type === 'success') {
                 toastIcon.innerHTML = '<svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>';
@@ -413,7 +516,7 @@
             } else {
                 toastIcon.innerHTML = '<svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>';
             }
-            
+
             toast.classList.remove('translate-x-full');
             setTimeout(() => {
                 toast.classList.add('translate-x-full');
@@ -425,7 +528,7 @@
             const overlay = document.getElementById('modal-overlay');
             const modalTitle = document.getElementById('modal-title');
             const modalBody = document.getElementById('modal-body');
-            
+
             modalTitle.textContent = title;
             modalBody.innerHTML = body;
             overlay.classList.remove('hidden');
@@ -438,17 +541,17 @@
             overlay.classList.remove('flex');
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Modal Close
             document.getElementById('modal-close').addEventListener('click', closeModal);
-            document.getElementById('modal-overlay').addEventListener('click', function(e) {
+            document.getElementById('modal-overlay').addEventListener('click', function (e) {
                 if (e.target === this) closeModal();
             });
 
             // Course Continue Buttons
             document.querySelectorAll('button').forEach(btn => {
                 if (btn.textContent.trim() === 'Continue') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         const courseCard = this.closest('.border');
                         const courseName = courseCard ? courseCard.querySelector('h3').textContent : 'Course';
                         showToast(`Opening ${courseName}...`, 'info');
@@ -478,7 +581,7 @@
             // Join Class Button
             document.querySelectorAll('button').forEach(btn => {
                 if (btn.textContent.trim() === 'Join') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         const classCard = this.closest('.flex');
                         const className = classCard ? classCard.querySelector('h3').textContent : 'Class';
                         showToast('Joining class session...', 'info');
@@ -495,7 +598,7 @@
             // View Class Buttons
             document.querySelectorAll('button').forEach(btn => {
                 if (btn.textContent.trim() === 'View') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         const classCard = this.closest('.flex');
                         const className = classCard ? classCard.querySelector('h3').textContent : 'Class';
                         const classInfo = classCard ? classCard.querySelector('p').textContent : '';
@@ -522,7 +625,7 @@
             // Edit Profile Button
             document.querySelectorAll('button').forEach(btn => {
                 if (btn.textContent.trim() === 'Edit Profile') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         showModal('Edit Profile', `
                             <form class="space-y-4" onsubmit="event.preventDefault(); showToast('Profile updated successfully!', 'success'); closeModal();">
                                 <div>
@@ -549,7 +652,7 @@
             // View All Payments Link
             document.querySelectorAll('a').forEach(link => {
                 if (link.textContent.includes('View All Payments')) {
-                    link.addEventListener('click', function(e) {
+                    link.addEventListener('click', function (e) {
                         e.preventDefault();
                         showModal('Payment History', `
                             <div class="space-y-3">
@@ -590,7 +693,7 @@
             document.querySelectorAll('button').forEach(btn => {
                 const text = btn.textContent.trim();
                 if (text === 'View Materials') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         showModal('Study Materials', `
                             <div class="space-y-3">
                                 <div class="p-3 border border-gray-200 dark:border-gray-700 rounded-lg">
@@ -609,7 +712,7 @@
                         `);
                     });
                 } else if (text === 'Submit Work') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         showModal('Submit Assignment', `
                             <form class="space-y-4" onsubmit="event.preventDefault(); showToast('Assignment submitted successfully!', 'success'); closeModal();">
                                 <div>
@@ -631,7 +734,7 @@
                         `);
                     });
                 } else if (text === 'Book Session') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         showModal('Book Counseling Session', `
                             <form class="space-y-4" onsubmit="event.preventDefault(); showToast('Session booked successfully!', 'success'); closeModal();">
                                 <div>
@@ -653,7 +756,7 @@
                         `);
                     });
                 } else if (text === 'Contact Support') {
-                    btn.addEventListener('click', function() {
+                    btn.addEventListener('click', function () {
                         window.location.href = 'contact.html';
                     });
                 }
@@ -661,5 +764,5 @@
         });
     </script>
 </body>
-</html>
 
+</html>

@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" class="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Courses - Excellence Academy</title>
     <meta name="description" content="Browse our comprehensive range of professional courses">
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
-    
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%231E3A8A'/%3E%3Ctext x='50' y='70' font-family='Arial, sans-serif' font-size='60' font-weight='bold' fill='white' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/custom.css">
-    
+
     <!-- Tailwind Config -->
     <script>
         tailwind.config = {
@@ -39,37 +43,47 @@
             }
         }
     </script>
-    
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        h1, h2, h3, h4, h5, h6 {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Poppins', sans-serif;
         }
-        
+
         /* Animated image effects */
         .course-card-image {
             animation: subtle-zoom 8s ease-in-out infinite;
         }
-        
+
         @keyframes subtle-zoom {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.05);
             }
         }
-        
+
         .course-card:hover .course-card-image {
             animation: none;
             transform: scale(1.1);
         }
     </style>
 </head>
+
 <body class="bg-[#FAF8F5] dark:bg-[#020617] text-[#0F172A] dark:text-[#E5E7EB] transition-colors duration-300">
-    
+
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass dark:glass-dark border-b border-white/20 dark:border-white/10">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,109 +91,168 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="index.html" class="flex items-center space-x-2">
-                        <div class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
+                        <div
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
                             <span class="text-white font-heading font-bold text-xl">E</span>
                         </div>
-                        <span class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB]">Excellence Academy</span>
+                        <span
+                            class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] whitespace-nowrap">Excellence
+                            Academy</span>
                     </a>
                 </div>
-                
+
                 <!-- Menu -->
                 <div class="hidden xl:flex items-center xl:space-x-8 xl:ml-8">
                     <!-- Home Dropdown -->
                     <div class="relative group">
-                        <button class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1" aria-haspopup="true" aria-expanded="false">
+                        <button
+                            class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1"
+                            aria-haspopup="true" aria-expanded="false">
                             <span>Home</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
-                            <a href="index.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home</a>
-                            <a href="home2.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home 2</a>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
+                            <a href="index.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home</a>
+                            <a href="home2.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Home
+                                2</a>
                         </div>
                     </div>
-                    <a href="courses.html" class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Courses</a>
-                    <a href="about.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About</a>
-                    <a href="faculty.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Faculty</a>
-                    <a href="results.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Results</a>
-                    <a href="admissions.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Admissions</a>
-                    <a href="contact.html" class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a>
+                    <a href="courses.html"
+                        class="text-academic-blue dark:text-[#3B82F6] font-medium hover:opacity-80 transition">Courses</a>
+                    <a href="about.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About</a>
+                    <a href="faculty.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Faculty</a>
+                    <a href="results.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Results</a>
+                    <a href="admissions.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Admissions</a>
+                    <a href="contact.html"
+                        class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a>
                     <!-- Dashboard Dropdown -->
                     <div class="relative group">
-                        <button class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1">
+                        <button
+                            class="text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:text-academic-blue dark:hover:text-[#3B82F6] transition flex items-center space-x-1">
                             <span>Dashboard</span>
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
-                        <div class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
-                            <a href="user-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">User Dashboard</a>
-                            <a href="admin-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Admin Dashboard</a>
+                        <div
+                            class="absolute left-0 mt-2 w-48 bg-white dark:bg-[#1e293b] rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-200 dark:border-gray-700">
+                            <a href="user-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">User
+                                Dashboard</a>
+                            <a href="admin-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] hover:bg-academic-blue/10 dark:hover:bg-[#3B82F6]/10 transition">Admin
+                                Dashboard</a>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
-                <button id="mobile-menu-toggle" class="xl:hidden p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle menu">
-                    <svg class="w-6 h-6 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                <button id="mobile-menu-toggle"
+                    class="xl:hidden p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition"
+                    aria-label="Toggle menu">
+                    <svg class="w-6 h-6 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
-                
+
                 <!-- Theme Toggle & Auth -->
                 <div class="hidden xl:flex items-center xl:space-x-4 xl:ml-8">
-                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
-                        <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition"
+                        aria-label="Toggle theme">
+                        <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
-                    <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
-                    <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
+                    <a href="login.html"
+                        class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
+                    <a href="signup.html"
+                        class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
                 </div>
             </div>
-            
+
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden xl:hidden pb-4">
                 <div class="flex flex-col space-y-2">
                     <!-- Home Dropdown (Mobile) -->
                     <div class="relative">
-                        <button id="mobile-home-dropdown-btn" class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition" aria-haspopup="true" aria-expanded="false">
+                        <button id="mobile-home-dropdown-btn"
+                            class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition"
+                            aria-haspopup="true" aria-expanded="false">
                             <span>Home</span>
-                            <svg id="mobile-home-dropdown-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg id="mobile-home-dropdown-icon" class="w-4 h-4 transform transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div id="mobile-home-dropdown-menu" class="hidden mt-1 ml-4 space-y-1">
-                            <a href="index.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home</a>
-                            <a href="home2.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home 2</a>
+                            <a href="index.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home</a>
+                            <a href="home2.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Home
+                                2</a>
                         </div>
                     </div>
-                    <a href="courses.html" class="px-4 py-2 text-academic-blue dark:text-[#3B82F6] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Courses</a>
-                    <a href="about.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">About</a>
-                    <a href="faculty.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Faculty</a>
-                    <a href="results.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
-                    <a href="admissions.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
-                    <a href="contact.html" class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
+                    <a href="courses.html"
+                        class="px-4 py-2 text-academic-blue dark:text-[#3B82F6] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Courses</a>
+                    <a href="about.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">About</a>
+                    <a href="faculty.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Faculty</a>
+                    <a href="results.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Results</a>
+                    <a href="admissions.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admissions</a>
+                    <a href="contact.html"
+                        class="px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Contact</a>
                     <!-- Dashboard Dropdown (Mobile) -->
                     <div class="relative">
-                        <button id="mobile-dashboard-dropdown-btn" class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition" aria-haspopup="true" aria-expanded="false">
+                        <button id="mobile-dashboard-dropdown-btn"
+                            class="w-full flex items-center justify-between px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition"
+                            aria-haspopup="true" aria-expanded="false">
                             <span>Dashboard</span>
-                            <svg id="mobile-dashboard-dropdown-icon" class="w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            <svg id="mobile-dashboard-dropdown-icon" class="w-4 h-4 transform transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div id="mobile-dashboard-dropdown-menu" class="hidden mt-1 ml-4 space-y-1">
-                            <a href="user-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">User Dashboard</a>
-                            <a href="admin-dashboard.html" class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admin Dashboard</a>
+                            <a href="user-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">User
+                                Dashboard</a>
+                            <a href="admin-dashboard.html"
+                                class="block px-4 py-2 text-[#0F172A] dark:text-[#E5E7EB] font-medium hover:bg-white/10 dark:hover:bg-white/10 rounded-lg transition">Admin
+                                Dashboard</a>
                         </div>
                     </div>
                     <div class="flex items-center justify-between px-4 py-2 space-x-2">
-                        <a href="login.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
-                        <a href="signup.html" class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
-                        <button id="theme-toggle-mobile" class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition" aria-label="Toggle theme">
-                            <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                        <a href="login.html"
+                            class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Login</a>
+                        <a href="signup.html"
+                            class="px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">Signup</a>
+                        <button id="theme-toggle-mobile"
+                            class="p-2 rounded-lg hover:bg-white/10 dark:hover:bg-white/10 transition"
+                            aria-label="Toggle theme">
+                            <svg class="w-5 h-5 text-[#0F172A] dark:text-[#E5E7EB]" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                             </svg>
                         </button>
                     </div>
@@ -204,362 +277,485 @@
     <section class="py-8 px-4 sm:px-6 lg:px-8 pb-16">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
-                
+
                 <!-- Course 1 -->
-                <div class="course-card bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="course-card bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Business Management" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+                            alt="Business Management"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Business Management</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Business
+                            Management</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Business</span>
+                            <span
+                                class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Business</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Business Management</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Business
+                            Management</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
-                            Master essential business skills, leadership principles, and strategic management techniques.
+                            Master essential business skills, leadership principles, and strategic management
+                            techniques.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Business Management">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Business Management">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 2 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="Data Science" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+                            alt="Data Science"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Data Science</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Data
+                            Science</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
+                            <span
+                                class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">8 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Data Science & Analytics</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Data
+                            Science & Analytics</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
-                            Learn data analysis, machine learning, statistical modeling, and data visualization techniques.
+                            Learn data analysis, machine learning, statistical modeling, and data visualization
+                            techniques.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Data Science & Analytics">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Data Science & Analytics">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 3 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80" alt="English Proficiency" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80"
+                            alt="English Proficiency"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">English Proficiency</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">English
+                            Proficiency</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Language</span>
+                            <span
+                                class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Language</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">4 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">English Proficiency</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">English
+                            Proficiency</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
-                            Enhance your communication skills, grammar, vocabulary, and fluency for global opportunities.
+                            Enhance your communication skills, grammar, vocabulary, and fluency for global
+                            opportunities.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="English Proficiency">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="English Proficiency">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 4 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80" alt="Web Development" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80"
+                            alt="Web Development"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Web Development</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Web
+                            Development</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
+                            <span
+                                class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Full-Stack Web Development</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">
+                            Full-Stack Web Development</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master front-end and back-end technologies to build modern, responsive web applications.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Full-Stack Web Development">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Full-Stack Web Development">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 5 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="Digital Marketing" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+                            alt="Digital Marketing"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Digital Marketing</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Digital
+                            Marketing</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Marketing</span>
+                            <span
+                                class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Marketing</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">5 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Digital Marketing</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Digital
+                            Marketing</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
-                            Learn SEO, social media marketing, content strategy, and analytics to grow businesses online.
+                            Learn SEO, social media marketing, content strategy, and analytics to grow businesses
+                            online.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Digital Marketing">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Digital Marketing">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 6 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" alt="Finance & Accounting" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80"
+                            alt="Finance & Accounting"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Finance & Accounting</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Finance
+                            & Accounting</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Finance</span>
+                            <span
+                                class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Finance</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">7 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Finance & Accounting</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Finance &
+                            Accounting</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master financial analysis, accounting principles, and financial management strategies.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Finance & Accounting">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Finance & Accounting">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 7 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80" alt="Graphic Design" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80"
+                            alt="Graphic Design"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Graphic Design</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Graphic
+                            Design</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Design</span>
+                            <span
+                                class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Design</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">5 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Graphic Design</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Graphic
+                            Design</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn Adobe Creative Suite, typography, branding, and visual communication principles.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Graphic Design">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Graphic Design">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 8 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="Project Management" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+                            alt="Project Management"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Project Management</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Project
+                            Management</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Management</span>
+                            <span
+                                class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Management</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Project Management</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Project
+                            Management</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master Agile, Scrum, and PMP methodologies to lead successful projects from start to finish.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Project Management">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Project Management">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 9 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80" alt="Cybersecurity" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80"
+                            alt="Cybersecurity"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Cybersecurity</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Cybersecurity</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
+                            <span
+                                class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">9 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Cybersecurity</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">
+                            Cybersecurity</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn ethical hacking, network security, threat analysis, and security best practices.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Cybersecurity">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Cybersecurity">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 10 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Mobile App Development" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80"
+                            alt="Mobile App Development"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Mobile App Development</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Mobile
+                            App Development</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
+                            <span
+                                class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Technology</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">7 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Mobile App Development</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Mobile
+                            App Development</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Build native and cross-platform mobile applications for iOS and Android platforms.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Mobile App Development">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Mobile App Development">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 11 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80" alt="Content Writing" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80"
+                            alt="Content Writing"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Content Writing</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">Content
+                            Writing</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Writing</span>
+                            <span
+                                class="px-3 py-1 bg-warm-gold/20 dark:bg-accent-gold/20 text-warm-gold dark:text-accent-gold rounded-full text-xs font-medium">Writing</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">4 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Content Writing</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">Content
+                            Writing</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Master SEO writing, copywriting, blog creation, and content strategy for digital platforms.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="Content Writing">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="Content Writing">
                             Enroll Now
                         </button>
                     </div>
                 </div>
 
                 <!-- Course 12 -->
-                <div class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
+                <div
+                    class="bg-white dark:bg-[#1e293b] rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 overflow-hidden flex flex-col h-full">
                     <div class="h-48 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" alt="UI/UX Design" class="course-card-image w-full h-full object-cover transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80"
+                            alt="UI/UX Design"
+                            class="course-card-image w-full h-full object-cover transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                        <span class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">UI/UX Design</span>
+                        <span
+                            class="absolute bottom-4 left-4 text-white font-heading font-bold text-xl drop-shadow-lg">UI/UX
+                            Design</span>
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <div class="flex items-center justify-between mb-3">
-                            <span class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Design</span>
+                            <span
+                                class="px-3 py-1 bg-academic-blue/20 dark:bg-[#3B82F6]/20 text-academic-blue dark:text-[#3B82F6] rounded-full text-xs font-medium">Design</span>
                             <span class="text-sm text-[#475569] dark:text-[#94a3b8]">6 Months</span>
                         </div>
-                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">UI/UX Design</h3>
+                        <h3 class="text-xl font-heading font-semibold mb-3 text-[#0F172A] dark:text-[#E5E7EB]">UI/UX
+                            Design</h3>
                         <p class="text-[#475569] dark:text-[#94a3b8] mb-4 text-sm flex-grow">
                             Learn user interface design, user experience principles, prototyping, and design thinking.
                         </p>
                         <div class="flex items-center justify-between mb-4">
                             <div class="flex items-center text-sm text-[#475569] dark:text-[#94a3b8]">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                 </svg>
                                 <span>Online & Offline</span>
                             </div>
                         </div>
-                        <button class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto" data-course="UI/UX Design">
+                        <button
+                            class="enroll-btn w-full px-4 py-2 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition mt-auto"
+                            data-course="UI/UX Design">
                             Enroll Now
                         </button>
                     </div>
@@ -576,27 +772,38 @@
                 <!-- About -->
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-8 h-8 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
+                        <div
+                            class="w-8 h-8 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center">
                             <span class="text-white font-heading font-bold">E</span>
                         </div>
-                        <span class="font-heading font-semibold text-base text-[#0F172A] dark:text-[#E5E7EB]">Excellence Academy</span>
+                        <span
+                            class="font-heading font-semibold text-lg text-[#0F172A] dark:text-[#E5E7EB] whitespace-nowrap">Excellence
+                            Academy</span>
                     </div>
                     <p class="text-sm text-[#475569] dark:text-[#94a3b8]">
                         Empowering students through quality education and expert coaching since 2009.
                     </p>
                 </div>
-                
+
                 <!-- Quick Links -->
                 <div>
                     <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a></li>
-                        <li><a href="courses.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a></li>
-                        <li><a href="about.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About Us</a></li>
-                        <li><a href="contact.html" class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a></li>
+                        <li><a href="index.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Home</a>
+                        </li>
+                        <li><a href="courses.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Courses</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">About
+                                Us</a></li>
+                        <li><a href="contact.html"
+                                class="text-sm text-[#475569] dark:text-[#94a3b8] hover:text-academic-blue dark:hover:text-[#3B82F6] transition">Contact</a>
+                        </li>
                     </ul>
                 </div>
-                
+
                 <!-- Contact Info -->
                 <div>
                     <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Contact</h3>
@@ -607,70 +814,87 @@
                         <li>Email: info@excellenceacademy.com</li>
                     </ul>
                 </div>
-                
+
                 <!-- Social -->
                 <div>
                     <h3 class="font-heading font-semibold mb-4 text-[#0F172A] dark:text-[#E5E7EB]">Follow Us</h3>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                        <a href="#"
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                             </svg>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                        <a href="#"
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                             </svg>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
+                        <a href="#"
+                            class="w-10 h-10 bg-academic-blue dark:bg-[#3B82F6] rounded-lg flex items-center justify-center hover:opacity-80 transition">
                             <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-sm text-[#475569] dark:text-[#94a3b8]">
+            <div
+                class="border-t border-gray-200 dark:border-gray-700 pt-8 text-center text-sm text-[#475569] dark:text-[#94a3b8]">
                 <p>&copy; 2025 Excellence Academy. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Enrollment Modal -->
-    <div id="enrollment-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 dark:bg-black/70">
-        <div class="bg-white dark:bg-[#1e293b] rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform transition-all">
+    <div id="enrollment-modal"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/50 dark:bg-black/70">
+        <div
+            class="bg-white dark:bg-[#1e293b] rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform transition-all">
             <div class="flex items-center justify-between mb-6">
                 <h2 class="text-2xl font-heading font-bold text-[#0F172A] dark:text-[#E5E7EB]">Enroll in Course</h2>
-                <button id="close-modal" class="text-[#475569] dark:text-[#94a3b8] hover:text-[#0F172A] dark:hover:text-[#E5E7EB] transition">
+                <button id="close-modal"
+                    class="text-[#475569] dark:text-[#94a3b8] hover:text-[#0F172A] dark:hover:text-[#E5E7EB] transition">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
             </div>
             <p class="text-[#475569] dark:text-[#94a3b8] mb-6">
-                You are enrolling in: <span id="course-name" class="font-semibold text-academic-blue dark:text-[#3B82F6]"></span>
+                You are enrolling in: <span id="course-name"
+                    class="font-semibold text-academic-blue dark:text-[#3B82F6]"></span>
             </p>
             <form id="enrollment-form" class="space-y-4">
                 <div>
-                    <label for="enroll-name" class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Full Name</label>
+                    <label for="enroll-name"
+                        class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Full Name</label>
                     <input type="text" id="enroll-name" name="name" required
                         class="w-full px-4 py-3 rounded-lg bg-[#FFFEFB] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
                 </div>
                 <div>
-                    <label for="enroll-email" class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Email Address</label>
+                    <label for="enroll-email"
+                        class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Email Address</label>
                     <input type="email" id="enroll-email" name="email" required
                         class="w-full px-4 py-3 rounded-lg bg-[#FFFEFB] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
                 </div>
                 <div>
-                    <label for="enroll-phone" class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Phone Number</label>
+                    <label for="enroll-phone"
+                        class="block text-sm font-medium mb-2 text-[#0F172A] dark:text-[#E5E7EB]">Phone Number</label>
                     <input type="tel" id="enroll-phone" name="phone" required
                         class="w-full px-4 py-3 rounded-lg bg-[#FFFEFB] dark:bg-[#0f172a] border border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-academic-blue dark:focus:ring-[#3B82F6] transition">
                 </div>
                 <div class="flex gap-4 pt-4">
-                    <button type="button" id="cancel-enroll" class="flex-1 px-4 py-3 border-2 border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-white/5 transition">
+                    <button type="button" id="cancel-enroll"
+                        class="flex-1 px-4 py-3 border-2 border-gray-300 dark:border-white/10 text-[#0F172A] dark:text-[#E5E7EB] rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-white/5 transition">
                         Cancel
                     </button>
-                    <button type="submit" class="flex-1 px-4 py-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition">
+                    <button type="submit"
+                        class="flex-1 px-4 py-3 bg-academic-blue dark:bg-[#3B82F6] text-white rounded-lg font-medium hover:opacity-90 transition">
                         Confirm Enrollment
                     </button>
                 </div>
@@ -680,10 +904,10 @@
 
     <!-- Theme Toggle Script -->
     <script src="assets/js/theme.js"></script>
-    
+
     <!-- Enrollment Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const modal = document.getElementById('enrollment-modal');
             const courseNameSpan = document.getElementById('course-name');
             const closeModalBtn = document.getElementById('close-modal');
@@ -693,7 +917,7 @@
 
             // Open modal when enroll button is clicked
             enrollButtons.forEach(button => {
-                button.addEventListener('click', function() {
+                button.addEventListener('click', function () {
                     const courseName = this.getAttribute('data-course');
                     courseNameSpan.textContent = courseName;
                     modal.classList.remove('hidden');
@@ -712,16 +936,16 @@
             cancelBtn.addEventListener('click', closeModal);
 
             // Close modal when clicking outside
-            modal.addEventListener('click', function(e) {
+            modal.addEventListener('click', function (e) {
                 if (e.target === modal) {
                     closeModal();
                 }
             });
 
             // Handle form submission
-            enrollForm.addEventListener('submit', function(e) {
+            enrollForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                
+
                 const formData = {
                     course: courseNameSpan.textContent,
                     name: document.getElementById('enroll-name').value,
@@ -732,12 +956,12 @@
                 // Here you would typically send this data to a server
                 // For now, we'll show a success message
                 alert(`Thank you ${formData.name}! Your enrollment request for "${formData.course}" has been received. We will contact you at ${formData.email} shortly.`);
-                
+
                 closeModal();
             });
 
             // Close modal with Escape key
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') {
                     if (!modal.classList.contains('hidden')) {
                         closeModal();
@@ -746,22 +970,22 @@
             });
         });
     </script>
-    
+
     <!-- Mobile Menu Toggle & Dropdown Functionality -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
             const mobileMenu = document.getElementById('mobile-menu');
             const themeToggleMobile = document.getElementById('theme-toggle-mobile');
-            
+
             if (mobileMenuToggle && mobileMenu) {
-                mobileMenuToggle.addEventListener('click', function() {
+                mobileMenuToggle.addEventListener('click', function () {
                     mobileMenu.classList.toggle('hidden');
                 });
             }
-            
+
             if (themeToggleMobile) {
-                themeToggleMobile.addEventListener('click', function() {
+                themeToggleMobile.addEventListener('click', function () {
                     if (window.toggleTheme) {
                         window.toggleTheme();
                     }
@@ -773,12 +997,12 @@
                 const button = document.getElementById(buttonId);
                 const menu = document.getElementById(menuId);
                 const icon = document.getElementById(iconId);
-                
+
                 if (button && menu) {
-                    button.addEventListener('click', function(e) {
+                    button.addEventListener('click', function (e) {
                         e.preventDefault();
                         e.stopPropagation();
-                        
+
                         // Close all other mobile dropdowns first
                         document.querySelectorAll('[id^="mobile-"][id$="-dropdown-menu"]').forEach(m => {
                             if (m !== menu) {
@@ -795,7 +1019,7 @@
                                 btn.setAttribute('aria-expanded', 'false');
                             }
                         });
-                        
+
                         // Toggle this dropdown
                         const isVisible = !menu.classList.contains('hidden');
                         if (isVisible) {
@@ -817,4 +1041,5 @@
         });
     </script>
 </body>
+
 </html>
